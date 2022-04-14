@@ -1,14 +1,17 @@
 import { createGlobalStyle } from "styled-components";
+import Layout from "../components/Layout/Layout.style";
 
 const GlobalStyles = createGlobalStyle`
   *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
   }
 
   html{
     font-size: 16px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Akshar', sans-serif;
+    letter-spacing: -0.05rem;
   }
 `;
 
@@ -16,7 +19,9 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <GlobalStyles />
-      <Component {...pageProps} />
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
     </>
   );
 }
