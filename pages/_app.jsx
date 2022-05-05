@@ -12,6 +12,7 @@ const GlobalStyles = createGlobalStyle`
     font-size: 16px;
     font-family: 'Akshar', sans-serif;
     letter-spacing: -0.05rem;
+    overflow: hidden;
   }
 `;
 

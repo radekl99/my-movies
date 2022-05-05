@@ -8,6 +8,7 @@ const Logo = styled.h1`
   color: ${secondary};
   display: flex;
   align-items: center;
+  cursor: pointer;
 `;
 
 export default Logo;
